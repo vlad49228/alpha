@@ -6,7 +6,7 @@ from threading import Thread
  
 from flask import Flask, jsonify, request, send_from_directory
  
-BOT_TOKEN = '8232012309:AAFEaushvc8QsXMVmmjLTmcmG05cohtH7cQ'
+BOT_TOKEN = '8232012309:AAHZCWUdF-9XXOR03xEbWJN1QoeX_FUc4Zo'
 ADMIN_CHAT_ID = 8201066917
  
 PORT = int(os.getenv('PORT', '8000'))
