@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Crypt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!-- Шапка -->
+        <div class="header">
+            <div class="header-left">
+                <span class="back-btn">←</span>
+                <h1>Alpha Crypt</h1>
+            </div>
+            <div class="header-right">
+                <span class="bot-name">Wallet</span>
+                <span class="menu-icon">⁝</span>
+            </div>
+        </div>
+
+        <!-- Баланс -->
+        <div class="balance-card">
+            <div class="balance-label">Total Balance</div>
+            <div class="balance-amount" id="total-balance">0.00 $</div>
+            <div class="balance-change" id="change">+0.00%</div>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="actions">
+            <button class="action-btn" id="transferBtn">Send</button>
+            <button class="action-btn" id="depositBtn">Receive</button>
+            <button class="action-btn" id="withdrawBtn">Withdraw</button>
+            <button class="action-btn" id="exchangeBtn">Swap</button>
+        </div>
+
+        <!-- Активы -->
+        <div class="assets-section">
+            <div class="section-header">
+                <h2>Assets</h2>
+                <span class="history-link">History</span>
+            </div>
+
+            <div class="crypto-list">
+                <div class="crypto-item" data-crypto="TON">
+                    <div class="crypto-icon ton">TON</div>
+                    <div class="crypto-info">
+                        <span class="crypto-name">Toncoin</span>
+                        <span class="crypto-desc">TON</span>
+                    </div>
+                    <div class="crypto-price-info">
+                        <span class="crypto-price" id="price-TON">1.33 $</span>
+                        <span class="crypto-change positive" id="change-TON">+1.52%</span>
+                        <span class="crypto-balance" id="balance-TON">0 TON</span>
+                    </div>
+                </div>
+
+                <div class="crypto-item" data-crypto="BTC">
+                    <div class="crypto-icon btc">BTC</div>
+                    <div class="crypto-info">
+                        <span class="crypto-name">Bitcoin</span>
+                        <span class="crypto-desc">BTC</span>
+                    </div>
+                    <div class="crypto-price-info">
+                        <span class="crypto-price" id="price-BTC">70,546 $</span>
+                        <span class="crypto-change positive" id="change-BTC">+2.30%</span>
+                        <span class="crypto-balance" id="balance-BTC">0 BTC</span>
+                    </div>
+                </div>
+
+                <div class="crypto-item" data-crypto="ETH">
+                    <div class="crypto-icon eth">ETH</div>
+                    <div class="crypto-info">
+                        <span class="crypto-name">Ethereum</span>
+                        <span class="crypto-desc">ETH</span>
+                    </div>
+                    <div class="crypto-price-info">
+                        <span class="crypto-price" id="price-ETH">2,072 $</span>
+                        <span class="crypto-change positive" id="change-ETH">+1.80%</span>
+                        <span class="crypto-balance" id="balance-ETH">0 ETH</span>
+                    </div>
+                </div>
+
+                <div class="crypto-item" data-crypto="USDT">
+                    <div class="crypto-icon usdt">USDT</div>
+                    <div class="crypto-info">
+                        <span class="crypto-name">Tether</span>
+                        <span class="crypto-desc">USDT</span>
+                    </div>
+                    <div class="crypto-price-info">
+                        <span class="crypto-price" id="price-USDT">1.00 $</span>
+                        <span class="crypto-change positive" id="change-USDT">+0.10%</span>
+                        <span class="crypto-balance" id="balance-USDT">0 USDT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Баннер -->
+        <div class="banner">
+            <div class="banner-content">
+                <span class="banner-icon">💰</span>
+                <span>Earn up to 25% APY on ADI</span>
+            </div>
+            <button class="banner-btn">Start</button>
+        </div>
+
+        <!-- Навигация -->
+        <div class="bottom-nav">
+            <button class="nav-item active" data-page="wallet">Wallet</button>
+            <button class="nav-item" data-page="trade">Trade</button>
+            <button class="nav-item" data-page="bonuses">Earn</button>
+            <button class="nav-item" data-page="history">History</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
